@@ -1,23 +1,25 @@
-import { BrowserRouter as Router } from "react-router-dom";
-
 import AnimatedRoute from "./components/AnimatedRoute";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
+import { GithubProvider } from "./context/github/GithubContext";
+
 function App() {
     return (
-        <div className="flex flex-col justify-between h-screen">
+        <GithubProvider>
+            <div className="flex flex-col justify-between h-screen">
 
-            <Navbar title='Github Finder' />
+                <Navbar title='Github Finder' />
 
-            <main className="container mx-auto px-3 pb-12" >
-                <AnimatedRoute />
-            </main>
+                <main className="container mx-auto px-3 pb-12" >
+                    <AnimatedRoute />
+                </main>
 
-            <Footer />
+                <Footer />
 
-        </div>
+            </div>
+        </GithubProvider>
     );
 };
 

@@ -1,4 +1,6 @@
-import { motion as m, AnimatePresence } from 'framer-motion';
+import { motion as m } from 'framer-motion';
+
+import UserResults from '../components/users/UserResults';
 
 const Home = () => {
     const animProps = {
@@ -35,7 +37,8 @@ const Home = () => {
             variants={animProps}
             exit='exit'
         >
-            <h1 className="text-6xl">Welcome</h1>
+            {/* Search comp. here */}
+            <UserResults />
         </m.div>
     );
 };
