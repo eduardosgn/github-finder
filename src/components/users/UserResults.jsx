@@ -20,7 +20,9 @@ const UserResults = () => {
         );
     } else {
         return (
-            <PacmanLoader color="#36d7b7" size={35} />
+            <div className="flex items-center justify-center">
+                <PacmanLoader color="#36d7b7" size={35} />
+            </div>
         );
     };
 };
