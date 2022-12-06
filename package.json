@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "preinstall": "npx npm-force-resolutions"
   },
+  "proxy": "http://localhost:5173",
   "dependencies": {
     "daisyui": "^2.42.1",
     "dotenv": "^16.0.3",
