@@ -4,7 +4,7 @@ import githubReducer from "./GithubReducer";
 const GithubContext = createContext();
 
 const GITHUB_API_URL = import.meta.env.VITE_GITHUB_API_URL;
-const GITHUB_TOKEN = import.meta.env.VITE_REACT_APP_GITHUB_TOKEN;
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
 export const GithubProvider = ({ children }) => {
     const initialState = {
