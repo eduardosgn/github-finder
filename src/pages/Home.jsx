@@ -1,6 +1,7 @@
 import { motion as m } from 'framer-motion';
 
 import UserResults from '../components/users/UserResults';
+import UserSearch from '../components/users/UserSearch';
 
 const Home = () => {
     const animProps = {
@@ -37,7 +38,7 @@ const Home = () => {
             variants={animProps}
             exit='exit'
         >
-            {/* Search comp. here */}
+            <UserSearch />
             <UserResults />
         </m.div>
     );
